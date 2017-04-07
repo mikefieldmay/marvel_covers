@@ -1,0 +1,32 @@
+{
+  "name": "marvel_covers",
+  "version": "1.0.0",
+  "description": "A web applicatin that will return Marvel comic book covers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "coveralls": "^2.13.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.11",
+    "nyc": "^10.2.0",
+    "zombie": "^5.0.5"
+  }
+}
