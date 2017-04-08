@@ -2,8 +2,18 @@
 <% include ../partials/header.html %>
 <main>
   <div class="jumbotron">
-    <h1>This is great</h1>
-      <p>Welcome to templating using EJS</p>
+    <h1>Marvel Comic Cover Finder</h1>
+    <p>Enter a comic title below</p>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-bar">
+          <form id="search-box" class="search-box" action="/search" method="post">
+            <input class="search" type="search" name="search" placeholder="Enter the comic title">
+            <input class="button" type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 
