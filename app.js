@@ -23,11 +23,20 @@ app.get('/', function (req, res) {
   res.render('pages/index');
 })
 
+app.post('/search', function (req, res) {
+    var searchTerm = req.body.search.toLowerCase();
+    res.redirect('/' + searchTerm);
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
+});
+
+app.get('https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&noVariants=true&title=Thor&apikey=0e114cd69703e41f35be3f6c2081c779', function (req,res){
+  console.log(res)
 });
 
 // error handler
